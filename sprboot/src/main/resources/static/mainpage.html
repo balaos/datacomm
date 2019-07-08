@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tech Tools</title>
+<script src="./js/lib/jquery-3.4.1.min.js"></script>
+<script src="./js/requesthandler.js"></script>
+<script src="./js/responsehandler.js"></script>
+<script src="./js/storagehandler.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/menubar.css"/>
+<link rel="stylesheet" type="text/css" href="./css/mainpage.css"/>
+
+</head>
+<body>
+<div class="container">
+<div class="menu">
+	<ul class="unlist">
+		<li><a class="active" id="jobsmenu">Jobs</a></li>
+		<li><a id="profilemenu">Profile</a></li>
+		<li><a id="timecardmenu">Timecard</a></li>
+		<li><a id="upsellmenu">Upsell</a></li>
+	</ul>
+</div>
+<div class="content">
+	<iframe class="framestyle" src="./html/jobs.html" id="jobs"></iframe>
+	<iframe class="framestyle" src="./html/timecard.html" id="timecard"></iframe>
+	<iframe class="framestyle" src="./html/upsell.html" id="upsell"></iframe>
+	<iframe class="framestyle" src="./html/profile.html" id="profile"></iframe>
+</div>
+</div>
+<!-- <input type="button" id="loadjobs" value="loadjobs"/> -->
+<script src="./js/app.js"></script>
+</body>
+</html>

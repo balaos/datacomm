@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="./js/lib/jquery-3.4.1.min.js"></script>
+<script src="./js/requesthandler.js"></script>
+<script src="./js/responsehandler.js"></script>
+</head>
+<body>
+Hi Bala
+<form method="post">
+	<input type="text" name="un"/><br/>
+	<input type="text" name="pwd"/><br/>
+	<input type="button" id="submit" value="submit"/>
+</form>
+<script>
+	$("#submit").click(function(){
+		alert("submit");
+		
+		var rh = new requesthandler();
+		rh.post("myapplogin",{"un":"bala","pwd":"admin"});
+		
+	}); 
+</script>
+</body>
+</html>
